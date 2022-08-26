@@ -1,0 +1,83 @@
+*{
+   margin:0px;
+   padding: 2px;
+}
+
+body{ font-family:Arial, Helvetica, sans-serif;
+   font-size: 14px;
+   margin: 16px;
+   background:rgb(12, 188, 103);
+   color:rgba(255, 255, 255, 0.742);
+}
+h2,p{
+   font-size: 40px;
+   font-weight: normal;
+}
+ul,li{
+   list-style: none;
+}
+ul{
+   overflow:hidden;
+   padding: 48px;
+}
+
+ul li a{
+   text-decoration:normal;
+   color:rgb(92, 8, 8);
+   background: #FFC;
+   display: block;
+   padding: 16px;
+   height: 160px;
+   width: 160px;
+   margin-top: 20px;
+   box-shadow: 5px 5px 7px rgba(249, 6, 6, 0.7);
+   transition:transform .15s linear;
+}
+ul li{
+   margin: 16px;
+   float: left;
+}
+ul li h2{
+   font-size: 140%;
+   font-weight: bold;
+   padding-bottom: 10px;
+}
+ul li p{
+   font-family: cursive;
+   font-size: 180%;
+}
+ul li a{
+   transform:rotate(-6deg);
+
+}
+ul li:nth-child(even) a{
+   transform:rotate(4deg);
+   position:relative;
+   top: 5px;
+   background: #cfc;
+}
+ul li:nth-child(3n) a{
+   transform:rotate(-3deg);
+   position:relative;
+   top:-5px;
+   background: #CCF;
+}
+ul li:nth-child(5n) a{
+   transform:rotate(5deg);
+   position:relative;
+   top:-10px; 
+}
+ul li a:hover, ul li a:focus{
+   box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+   transform:scale(1.25);
+   position:relative;
+   z-index: 5;
+}
+.note{
+   position:absolute;
+   background:rgb(11, 5, 5);
+   width:150px;
+   height:150px;
+}
+
+
